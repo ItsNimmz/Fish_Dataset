@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="container mt-4">
-        <h2 class="mb-4">Fish Weight Prediction</h2>
+        <h2 class="mb-4 heading">Fish Weight Prediction</h2>
         <form method="post" action="/predict">
             <div class="form-group">
                 <label for="length1">Length 1:</label>
@@ -31,6 +31,9 @@
             </div>
             <button type="submit" class="btn btn-primary">Predict Weight</button>
         </form>
+        {% if prediction_text %}
+            <h4 class="mt-4">{{ prediction_text }}</h4>
+        {% endif %}
     </div>
 </body>
 </html>

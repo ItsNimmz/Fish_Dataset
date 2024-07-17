@@ -3,6 +3,9 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #ddd;
+    margin-top: 5%;
     }
     
     /* Form Container */
@@ -13,12 +16,13 @@ body {
     border: 2px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    align-items: center;
     }
     
     /* Form Title */
     h1 {
     text-align: center;
-    color: #333;
+    color: #4CAF50;
     }
     
     /* Label Styles */
@@ -39,7 +43,7 @@ body {
     /* Button Styles */
     button {
     padding: 10px 20px;
-    background: #3498db;
+    background: #4CAF50;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -55,4 +59,23 @@ body {
     border: 1px solid #ddd;
     border-radius: 3px;
     }
+    /* Custom CSS for select box */
+    .custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    cursor: pointer;
+    }
     
+    .form-group{
+        margin-top: 15px;
+    }
+    .heading{
+        text-align: center;
+        color: #4CAF50;
+    }
