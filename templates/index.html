@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fish Weight Prediction</title>
+    <title>Fish Species Prediction</title>
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
@@ -11,23 +11,23 @@
         <form method="post" action="/predict">
             <div class="form-group">
                 <label for="length1">Length 1:</label>
-                <input type="text" id="length1" name="length1" class="form-control" required>
+                <input type="text" id="length1" name="length1" class="form-control" pattern="[0-9]+([.,][0-9]+)?" title="Please enter a valid number" required>
             </div>
             <div class="form-group">
                 <label for="length2">Length 2:</label>
-                <input type="text" id="length2" name="length2" class="form-control" required>
+                <input type="text" id="length2" name="length2" class="form-control" pattern="[0-9]+([.,][0-9]+)?" title="Please enter a valid number" required>
             </div>
             <div class="form-group">
                 <label for="length3">Length 3:</label>
-                <input type="text" id="length3" name="length3" class="form-control" required>
+                <input type="text" id="length3" name="length3" class="form-control" pattern="[0-9]+([.,][0-9]+)?" title="Please enter a valid number" required>
             </div>
             <div class="form-group">
                 <label for="height">Height:</label>
-                <input type="text" id="height" name="height" class="form-control" required>
+                <input type="text" id="height" name="height" class="form-control" pattern="[0-9]+([.,][0-9]+)?" title="Please enter a valid number" required>
             </div>
             <div class="form-group">
                 <label for="width">Width:</label>
-                <input type="text" id="width" name="width" class="form-control" required>
+                <input type="text" id="width" name="width" class="form-control" pattern="[0-9]+([.,][0-9]+)?" title="Please enter a valid number" required>
             </div>
             <button type="submit" class="btn btn-primary">Predict Species</button>
         </form>
